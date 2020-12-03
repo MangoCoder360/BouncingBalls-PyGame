@@ -1,4 +1,4 @@
-import pygame
+import pygame, sys
 pygame.init()
 screenInfo = pygame.display.Info()
 size = (width, height) = (screenInfo.current_w, screenInfo.current_h)
@@ -16,6 +16,10 @@ def moveBall():
 
 def main():
     while True:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                sys.exit()
         clock.tick(1000)
         screen.fill(bgColor)
         pygame.display.flip()
