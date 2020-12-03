@@ -10,4 +10,5 @@ bgColor = (0, 255, 100)
 def main():
     while True:
         clock.tick(1000)
-        
+        screen.fill(bgColor)
+        pygame.display.flip()
