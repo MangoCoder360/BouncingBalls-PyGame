@@ -20,7 +20,7 @@ def main():
         screen.fill(bgColor)
         pygame.display.flip()
         moveBall()
-        screen.blit(ballImage)
+        screen.blit(ballImage, ballSpeed)
 
 if __name__ == "__main__":
     main()
