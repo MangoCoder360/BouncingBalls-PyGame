@@ -12,3 +12,6 @@ def main():
         clock.tick(1000)
         screen.fill(bgColor)
         pygame.display.flip()
+
+if __name__ == "__main__":
+    main()
